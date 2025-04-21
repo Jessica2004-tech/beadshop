@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Our Beads Collection</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <section class="product-container">
+    <div class="product">
+      <img src="images/beadsbykendra_-20250222-0001.jpg" alt="Bead 1">
+      <p>Handmade neckpiece $15</p>
+      <button onclick="buynow()">Buy now</button>
+      <button class="add-to-cart" data-name="Handmade neckpiece" data-price="15">Add to cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/beadsbykendra_-20250329-0001.jpg" alt="Bead 2">
+      <p>Purple chic bead $20</p>
+      <button onclick="buynow()">Buy now</button>
+      <button class="add-to-cart" data-name="Purple chic bead" data-price="20">Add to cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/beadsbykendra_-20250329-0002.jpg" alt="Bead 3">
+      <p>Wholesale beads $100</p>
+      <button onclick="buynow()">Buy now</button>
+      <button class="add-to-cart" data-name="Wholesale beads" data-price="100">Add to cart</button>
+    </div>
+
+    <div class="product">
+      <img src="images/beadsbykendra_-20250329-0005.jpg" alt="Bead 4">
+      <p>Lilac and black bead $20</p>
+      <button onclick="buynow()">Buy now</button>
+      <button class="add-to-cart" data-name="Lilac and black bead" data-price="20">Add to cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Essie's Bead Shop</p>
+  </footer>
+
+  <!-- Cart Section -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+    <button id="clear-cart"> clear cart</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
